@@ -1,0 +1,10 @@
+C:\Pessoal\design-patterns\Flyweight\bin\Debug\netcoreapp2.2\Flyweight.deps.json
+C:\Pessoal\design-patterns\Flyweight\bin\Debug\netcoreapp2.2\Flyweight.runtimeconfig.json
+C:\Pessoal\design-patterns\Flyweight\bin\Debug\netcoreapp2.2\Flyweight.runtimeconfig.dev.json
+C:\Pessoal\design-patterns\Flyweight\bin\Debug\netcoreapp2.2\Flyweight.dll
+C:\Pessoal\design-patterns\Flyweight\bin\Debug\netcoreapp2.2\Flyweight.pdb
+C:\Pessoal\design-patterns\Flyweight\obj\Debug\netcoreapp2.2\Flyweight.csproj.CoreCompileInputs.cache
+C:\Pessoal\design-patterns\Flyweight\obj\Debug\netcoreapp2.2\Flyweight.AssemblyInfoInputs.cache
+C:\Pessoal\design-patterns\Flyweight\obj\Debug\netcoreapp2.2\Flyweight.AssemblyInfo.cs
+C:\Pessoal\design-patterns\Flyweight\obj\Debug\netcoreapp2.2\Flyweight.dll
+C:\Pessoal\design-patterns\Flyweight\obj\Debug\netcoreapp2.2\Flyweight.pdb

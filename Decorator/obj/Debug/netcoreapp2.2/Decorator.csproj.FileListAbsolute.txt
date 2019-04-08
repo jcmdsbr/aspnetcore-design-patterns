@@ -1,0 +1,11 @@
+C:\Pessoal\design-patterns\Decorator\bin\Debug\netcoreapp2.2\Decorator.deps.json
+C:\Pessoal\design-patterns\Decorator\bin\Debug\netcoreapp2.2\Decorator.runtimeconfig.json
+C:\Pessoal\design-patterns\Decorator\bin\Debug\netcoreapp2.2\Decorator.runtimeconfig.dev.json
+C:\Pessoal\design-patterns\Decorator\bin\Debug\netcoreapp2.2\Decorator.dll
+C:\Pessoal\design-patterns\Decorator\bin\Debug\netcoreapp2.2\Decorator.pdb
+C:\Pessoal\design-patterns\Decorator\obj\Debug\netcoreapp2.2\Decorator.csprojAssemblyReference.cache
+C:\Pessoal\design-patterns\Decorator\obj\Debug\netcoreapp2.2\Decorator.csproj.CoreCompileInputs.cache
+C:\Pessoal\design-patterns\Decorator\obj\Debug\netcoreapp2.2\Decorator.AssemblyInfoInputs.cache
+C:\Pessoal\design-patterns\Decorator\obj\Debug\netcoreapp2.2\Decorator.AssemblyInfo.cs
+C:\Pessoal\design-patterns\Decorator\obj\Debug\netcoreapp2.2\Decorator.dll
+C:\Pessoal\design-patterns\Decorator\obj\Debug\netcoreapp2.2\Decorator.pdb

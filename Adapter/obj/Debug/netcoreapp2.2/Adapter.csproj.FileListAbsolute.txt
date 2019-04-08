@@ -1,0 +1,11 @@
+C:\Pessoal\design-patterns\Adapter\bin\Debug\netcoreapp2.2\Adapter.deps.json
+C:\Pessoal\design-patterns\Adapter\bin\Debug\netcoreapp2.2\Adapter.runtimeconfig.json
+C:\Pessoal\design-patterns\Adapter\bin\Debug\netcoreapp2.2\Adapter.runtimeconfig.dev.json
+C:\Pessoal\design-patterns\Adapter\bin\Debug\netcoreapp2.2\Adapter.dll
+C:\Pessoal\design-patterns\Adapter\bin\Debug\netcoreapp2.2\Adapter.pdb
+C:\Pessoal\design-patterns\Adapter\obj\Debug\netcoreapp2.2\Adapter.csprojAssemblyReference.cache
+C:\Pessoal\design-patterns\Adapter\obj\Debug\netcoreapp2.2\Adapter.csproj.CoreCompileInputs.cache
+C:\Pessoal\design-patterns\Adapter\obj\Debug\netcoreapp2.2\Adapter.AssemblyInfoInputs.cache
+C:\Pessoal\design-patterns\Adapter\obj\Debug\netcoreapp2.2\Adapter.AssemblyInfo.cs
+C:\Pessoal\design-patterns\Adapter\obj\Debug\netcoreapp2.2\Adapter.dll
+C:\Pessoal\design-patterns\Adapter\obj\Debug\netcoreapp2.2\Adapter.pdb

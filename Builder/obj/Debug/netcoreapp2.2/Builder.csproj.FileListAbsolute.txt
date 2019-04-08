@@ -1,0 +1,11 @@
+C:\Pessoal\design-patterns\Builder\bin\Debug\netcoreapp2.2\Builder.deps.json
+C:\Pessoal\design-patterns\Builder\bin\Debug\netcoreapp2.2\Builder.runtimeconfig.json
+C:\Pessoal\design-patterns\Builder\bin\Debug\netcoreapp2.2\Builder.runtimeconfig.dev.json
+C:\Pessoal\design-patterns\Builder\bin\Debug\netcoreapp2.2\Builder.dll
+C:\Pessoal\design-patterns\Builder\bin\Debug\netcoreapp2.2\Builder.pdb
+C:\Pessoal\design-patterns\Builder\obj\Debug\netcoreapp2.2\Builder.csprojAssemblyReference.cache
+C:\Pessoal\design-patterns\Builder\obj\Debug\netcoreapp2.2\Builder.csproj.CoreCompileInputs.cache
+C:\Pessoal\design-patterns\Builder\obj\Debug\netcoreapp2.2\Builder.AssemblyInfoInputs.cache
+C:\Pessoal\design-patterns\Builder\obj\Debug\netcoreapp2.2\Builder.AssemblyInfo.cs
+C:\Pessoal\design-patterns\Builder\obj\Debug\netcoreapp2.2\Builder.dll
+C:\Pessoal\design-patterns\Builder\obj\Debug\netcoreapp2.2\Builder.pdb

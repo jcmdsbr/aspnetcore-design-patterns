@@ -1,0 +1,10 @@
+C:\Pessoal\design-patterns\ChainOfResponsibility\bin\Debug\netcoreapp2.2\ChainOfResponsibility.deps.json
+C:\Pessoal\design-patterns\ChainOfResponsibility\bin\Debug\netcoreapp2.2\ChainOfResponsibility.runtimeconfig.json
+C:\Pessoal\design-patterns\ChainOfResponsibility\bin\Debug\netcoreapp2.2\ChainOfResponsibility.runtimeconfig.dev.json
+C:\Pessoal\design-patterns\ChainOfResponsibility\bin\Debug\netcoreapp2.2\ChainOfResponsibility.dll
+C:\Pessoal\design-patterns\ChainOfResponsibility\bin\Debug\netcoreapp2.2\ChainOfResponsibility.pdb
+C:\Pessoal\design-patterns\ChainOfResponsibility\obj\Debug\netcoreapp2.2\ChainOfResponsibility.csproj.CoreCompileInputs.cache
+C:\Pessoal\design-patterns\ChainOfResponsibility\obj\Debug\netcoreapp2.2\ChainOfResponsibility.AssemblyInfoInputs.cache
+C:\Pessoal\design-patterns\ChainOfResponsibility\obj\Debug\netcoreapp2.2\ChainOfResponsibility.AssemblyInfo.cs
+C:\Pessoal\design-patterns\ChainOfResponsibility\obj\Debug\netcoreapp2.2\ChainOfResponsibility.dll
+C:\Pessoal\design-patterns\ChainOfResponsibility\obj\Debug\netcoreapp2.2\ChainOfResponsibility.pdb

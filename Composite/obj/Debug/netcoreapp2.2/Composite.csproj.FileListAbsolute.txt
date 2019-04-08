@@ -1,0 +1,11 @@
+C:\Pessoal\design-patterns\Composite\bin\Debug\netcoreapp2.2\Composite.deps.json
+C:\Pessoal\design-patterns\Composite\bin\Debug\netcoreapp2.2\Composite.runtimeconfig.json
+C:\Pessoal\design-patterns\Composite\bin\Debug\netcoreapp2.2\Composite.runtimeconfig.dev.json
+C:\Pessoal\design-patterns\Composite\bin\Debug\netcoreapp2.2\Composite.dll
+C:\Pessoal\design-patterns\Composite\bin\Debug\netcoreapp2.2\Composite.pdb
+C:\Pessoal\design-patterns\Composite\obj\Debug\netcoreapp2.2\Composite.csprojAssemblyReference.cache
+C:\Pessoal\design-patterns\Composite\obj\Debug\netcoreapp2.2\Composite.csproj.CoreCompileInputs.cache
+C:\Pessoal\design-patterns\Composite\obj\Debug\netcoreapp2.2\Composite.AssemblyInfoInputs.cache
+C:\Pessoal\design-patterns\Composite\obj\Debug\netcoreapp2.2\Composite.AssemblyInfo.cs
+C:\Pessoal\design-patterns\Composite\obj\Debug\netcoreapp2.2\Composite.dll
+C:\Pessoal\design-patterns\Composite\obj\Debug\netcoreapp2.2\Composite.pdb
