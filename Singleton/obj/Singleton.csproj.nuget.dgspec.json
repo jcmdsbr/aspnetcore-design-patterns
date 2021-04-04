@@ -1,34 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Pessoal\\design-patterns\\Singleton\\Singleton.csproj": {}
+    "/home/jcmdsbr/workspaces/github/aspnetcore-design-patterns/Singleton/Singleton.csproj": {}
   },
   "projects": {
-    "C:\\Pessoal\\design-patterns\\Singleton\\Singleton.csproj": {
+    "/home/jcmdsbr/workspaces/github/aspnetcore-design-patterns/Singleton/Singleton.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Pessoal\\design-patterns\\Singleton\\Singleton.csproj",
+        "projectUniqueName": "/home/jcmdsbr/workspaces/github/aspnetcore-design-patterns/Singleton/Singleton.csproj",
         "projectName": "Singleton",
-        "projectPath": "C:\\Pessoal\\design-patterns\\Singleton\\Singleton.csproj",
-        "packagesPath": "C:\\Users\\jean.moreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Pessoal\\design-patterns\\Singleton\\obj\\",
+        "projectPath": "/home/jcmdsbr/workspaces/github/aspnetcore-design-patterns/Singleton/Singleton.csproj",
+        "packagesPath": "/home/jcmdsbr/.nuget/packages/",
+        "outputPath": "/home/jcmdsbr/workspaces/github/aspnetcore-design-patterns/Singleton/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jean.moreira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/jcmdsbr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -39,14 +38,9 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
             "NUnit": {
               "target": "Package",
               "version": "[3.11.0, )"
@@ -57,10 +51,21 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

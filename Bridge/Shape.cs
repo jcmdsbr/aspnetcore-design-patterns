@@ -2,11 +2,11 @@
 {
     public abstract class Shape
     {
-        protected IRenderer renderer;
+        protected readonly IRenderer renderer;
 
         // a bridge between the shape that's being drawn an
         // the component which actually draws it
-        public Shape(IRenderer renderer)
+        protected Shape(IRenderer renderer)
         {
             this.renderer = renderer;
         }

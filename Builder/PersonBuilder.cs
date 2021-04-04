@@ -1,16 +1,16 @@
-namespace BuilderFacets
+namespace Builder
 {
     public class PersonBuilder // facade 
     {
         // the object we're going to build
-        protected Person person = new Person(); // this is a reference!
+        protected Person Person = new(); // this is a reference!
 
-        public PersonAddressBuilder Lives => new PersonAddressBuilder(person);
-        public PersonJobBuilder Works => new PersonJobBuilder(person);
+        public PersonAddressBuilder Lives => new(Person);
+        public PersonJobBuilder Works => new(Person);
 
         public static implicit operator Person(PersonBuilder pb)
         {
-            return pb.person;
+            return pb.Person;
         }
     }
 }

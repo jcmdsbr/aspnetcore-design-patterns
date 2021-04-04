@@ -2,12 +2,8 @@
 {
     public class Line
     {
-        public Point End;
-        public Point Start;
-
-        public Line()
-        {
-        }
+        public readonly Point End;
+        public readonly Point Start;
 
         public Line(Point start, Point end)
         {

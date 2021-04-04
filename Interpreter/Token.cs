@@ -13,8 +13,8 @@ namespace Interpreter
             Rparen
         }
 
-        public Type MyType;
-        public string Text;
+        public readonly Type MyType;
+        public readonly string Text;
 
         public Token(Type type, string text)
         {

@@ -2,8 +2,8 @@
 {
     public class Line
     {
-        public Point End;
-        public Point Start;
+        public readonly Point End;
+        public readonly Point Start;
 
         public Line(Point start, Point end)
         {
@@ -11,7 +11,7 @@
             End = end;
         }
 
-        protected bool Equals(Line other)
+        private bool Equals(Line other)
         {
             return Equals(Start, other.Start) && Equals(End, other.End);
         }
@@ -20,8 +20,7 @@
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != GetType()) return false;
-            return Equals((Line) obj);
+            return obj.GetType() == GetType() && Equals((Line) obj);
         }
 
         public override int GetHashCode()

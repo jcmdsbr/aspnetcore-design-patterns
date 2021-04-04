@@ -1,28 +1,28 @@
-namespace BuilderFacets
+namespace Builder
 {
     public class PersonAddressBuilder : PersonBuilder
     {
         // might not work with a value type!
         public PersonAddressBuilder(Person person)
         {
-            this.person = person;
+            Person = person;
         }
 
         public PersonAddressBuilder At(string streetAddress)
         {
-            person.StreetAddress = streetAddress;
+            Person.StreetAddress = streetAddress;
             return this;
         }
 
         public PersonAddressBuilder WithPostcode(string postcode)
         {
-            person.Postcode = postcode;
+            Person.Postcode = postcode;
             return this;
         }
 
         public PersonAddressBuilder In(string city)
         {
-            person.City = city;
+            Person.City = city;
             return this;
         }
     }

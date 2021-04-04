@@ -5,13 +5,13 @@ namespace Adapter.NoCaching
 {
     public class LineToPointAdapter : Collection<Point>
     {
-        private static int count;
+        private static int _count;
 
         public LineToPointAdapter(Line line)
         {
             Console
                 .WriteLine(
-                    $"{++count}: Generating points for line [{line.Start.X},{line.Start.Y}]-[{line.End.X},{line.End.Y}] (no caching)");
+                    $"{++_count}: Generating points for line [{line.Start.X},{line.Start.Y}]-[{line.End.X},{line.End.Y}] (no caching)");
 
             var left = Math.Min(line.Start.X, line.End.X);
             var right = Math.Max(line.Start.X, line.End.X);

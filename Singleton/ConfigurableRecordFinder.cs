@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Singleton
 {
@@ -13,10 +14,7 @@ namespace Singleton
 
         public int GetTotalPopulation(IEnumerable<string> names)
         {
-            var result = 0;
-            foreach (var name in names)
-                result += database.GetPopulation(name);
-            return result;
+            return names.Sum(name => database.GetPopulation(name));
         }
     }
 }

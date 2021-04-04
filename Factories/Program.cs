@@ -4,7 +4,7 @@
     {
         private static void Main(string[] args)
         {
-            var p1 = new Point(2, 3, CoordinateSystem.Cartesian);
+            var p1 = new Point(2, 3);
 
             var origin = Point.Origin;
 

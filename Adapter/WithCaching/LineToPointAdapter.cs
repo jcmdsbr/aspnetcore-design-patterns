@@ -6,18 +6,18 @@ namespace Adapter.WithCaching
 {
     public class LineToPointAdapter : IEnumerable<Point>
     {
-        private static int count;
-        private static readonly Dictionary<int, List<Point>> cache = new Dictionary<int, List<Point>>();
+        private static int _count;
+        private static readonly Dictionary<int, List<Point>> Cache = new();
         private readonly int hash;
 
         public LineToPointAdapter(Line line)
         {
             hash = line.GetHashCode();
-            if (cache.ContainsKey(hash)) return; // we already have it
+            if (Cache.ContainsKey(hash)) return; // we already have it
 
             Console
                 .WriteLine(
-                    $"{++count}: Generating points for line [{line.Start.X},{line.Start.Y}]-[{line.End.X},{line.End.Y}] (with caching)");
+                    $"{++_count}: Generating points for line [{line.Start.X},{line.Start.Y}]-[{line.End.X},{line.End.Y}] (with caching)");
             //                                                 ^^^^
 
             var points = new List<Point>();
@@ -36,12 +36,12 @@ namespace Adapter.WithCaching
                 for (var x = left; x <= right; ++x)
                     points.Add(new Point(x, top));
 
-            cache.Add(hash, points);
+            Cache.Add(hash, points);
         }
 
         public IEnumerator<Point> GetEnumerator()
         {
-            return cache[hash].GetEnumerator();
+            return Cache[hash].GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
-namespace Coding.Exercise.Tests
+namespace Façade
 {
     public class MyVerifier
     {
-        public bool Verify(List<List<int>> array)
+        public static bool Verify(List<List<int>> array)
         {
             if (!array.Any()) return false;
 
@@ -36,6 +37,4 @@ namespace Coding.Exercise.Tests
             return diag1.Sum() == expected && diag2.Sum() == expected;
         }
     }
-}
-
 }

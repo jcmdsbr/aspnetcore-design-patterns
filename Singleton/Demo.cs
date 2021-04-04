@@ -1,4 +1,6 @@
-﻿namespace Singleton
+﻿using static System.Console;
+
+namespace Singleton
 {
     public class Demo
     {
@@ -7,7 +9,7 @@
             var db = SingletonDatabase.Instance;
 
             // works just fine while you're working with a real database.
-            var city = "Tokyo";
+            const string city = "Tokyo";
             WriteLine($"{city} has population {db.GetPopulation(city)}");
 
             // now some tests

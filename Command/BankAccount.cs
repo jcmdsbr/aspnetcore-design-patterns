@@ -4,8 +4,8 @@ namespace Command
 {
     public class BankAccount
     {
+        private const int OverdraftLimit = -500;
         private int balance;
-        private readonly int overdraftLimit = -500;
 
         public void Deposit(int amount)
         {
@@ -15,14 +15,10 @@ namespace Command
 
         public bool Withdraw(int amount)
         {
-            if (balance - amount >= overdraftLimit)
-            {
-                balance -= amount;
-                WriteLine($"Withdrew ${amount}, balance is now {balance}");
-                return true;
-            }
-
-            return false;
+            if (balance - amount < OverdraftLimit) return false;
+            balance -= amount;
+            WriteLine($"Withdrew ${amount}, balance is now {balance}");
+            return true;
         }
 
         public override string ToString()

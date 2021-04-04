@@ -4,7 +4,7 @@ namespace Façade
 {
     public class Splitter
     {
-        public List<List<int>> Split(List<List<int>> array)
+        public static List<List<int>> Split(List<List<int>> array)
         {
             var result = new List<List<int>>();
 

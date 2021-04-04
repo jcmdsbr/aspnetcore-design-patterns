@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Flyweight
 {
     public class BetterFormattedText
     {
-        private readonly List<TextRange> formatting = new List<TextRange>();
+        private readonly List<TextRange> formatting = new();
         private readonly string plainText;
 
         public BetterFormattedText(string plainText)
@@ -27,9 +28,8 @@ namespace Flyweight
             for (var i = 0; i < plainText.Length; i++)
             {
                 var c = plainText[i];
-                foreach (var range in formatting)
-                    if (range.Covers(i) && range.Capitalize)
-                        c = char.ToUpperInvariant(c);
+                c = formatting.Where(range => range.Covers(i) && range.Capitalize)
+                    .Aggregate(c, (current, range) => char.ToUpperInvariant(current));
                 sb.Append(c);
             }
 

@@ -30,7 +30,7 @@ namespace Singleton
             // testing on a live database
             var rf = new SingletonRecordFinder();
             var names = new[] {"Seoul", "Mexico City"};
-            var tp = rf.TotalPopulation(names);
+            var tp = SingletonRecordFinder.TotalPopulation(names);
             Assert.That(tp, Is.EqualTo(17500000 + 17400000));
         }
     }

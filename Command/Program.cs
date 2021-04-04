@@ -11,8 +11,8 @@ namespace Command
             var ba = new BankAccount();
             var commands = new List<BankAccountCommand>
             {
-                new BankAccountCommand(ba, BankAccountCommand.Action.Deposit, 100),
-                new BankAccountCommand(ba, BankAccountCommand.Action.Withdraw, 1000)
+                new(ba, BankAccountCommand.Action.Deposit, 100),
+                new(ba, BankAccountCommand.Action.Withdraw, 1000)
             };
 
             WriteLine(ba);

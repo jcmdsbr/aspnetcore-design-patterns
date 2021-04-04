@@ -1,4 +1,6 @@
-﻿namespace Bridge
+﻿using System;
+
+namespace Bridge
 {
     public class VectorRenderer : IRenderer
     {

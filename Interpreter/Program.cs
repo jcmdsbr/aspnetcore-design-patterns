@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using static System.Console;
 
@@ -49,7 +50,7 @@ namespace Interpreter
         private static IElement Parse(IReadOnlyList<Token> tokens)
         {
             var result = new BinaryOperation();
-            var haveLHS = false;
+            var haveLhs = false;
             for (var i = 0; i < tokens.Count; i++)
             {
                 var token = tokens[i];
@@ -59,10 +60,10 @@ namespace Interpreter
                 {
                     case Token.Type.Integer:
                         var integer = new Integer(int.Parse(token.Text));
-                        if (!haveLHS)
+                        if (!haveLhs)
                         {
                             result.Left = integer;
-                            haveLHS = true;
+                            haveLhs = true;
                         }
                         else
                         {
@@ -84,10 +85,10 @@ namespace Interpreter
                         // process subexpression w/o opening (
                         var subexpression = tokens.Skip(i + 1).Take(j - i - 1).ToList();
                         var element = Parse(subexpression);
-                        if (!haveLHS)
+                        if (!haveLhs)
                         {
                             result.Left = element;
-                            haveLHS = true;
+                            haveLhs = true;
                         }
                         else
                         {
@@ -95,6 +96,8 @@ namespace Interpreter
                         }
 
                         i = j; // advance
+                        break;
+                    case Token.Type.Rparen:
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
@@ -106,7 +109,7 @@ namespace Interpreter
 
         private static void Main()
         {
-            var input = "(13+4)-(12+1)";
+            const string input = "(13+4)-(12+1)";
             var tokens = Lex(input);
             WriteLine(string.Join("\t", tokens));
 

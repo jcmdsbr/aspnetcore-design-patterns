@@ -15,7 +15,7 @@ namespace Iterator
         {
             get
             {
-                IEnumerable<Node<T>> TraverseInOrder(Node<T> current)
+                static IEnumerable<Node<T>> TraverseInOrder(Node<T> current)
                 {
                     if (current.Left != null)
                         foreach (var left in TraverseInOrder(current.Left))
@@ -33,7 +33,7 @@ namespace Iterator
 
         public InOrderIterator<T> GetEnumerator()
         {
-            return new InOrderIterator<T>(root);
+            return new(root);
         }
     }
 }

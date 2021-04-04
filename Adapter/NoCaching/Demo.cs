@@ -1,24 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MoreLinq;
 
 namespace Adapter.NoCaching
 {
-    public class Demo
+    public static class Demo
     {
-        private static readonly List<VectorObject> vectorObjects = new List<VectorObject>
+        private static readonly List<VectorObject> VectorObjects = new()
         {
             new VectorRectangle(1, 1, 10, 10),
             new VectorRectangle(3, 3, 6, 6)
         };
 
         // the interface we have
-        public static void DrawPoint(Point p)
+        private static void DrawPoint(Point p)
         {
             Console.Write(".");
         }
 
-        private static void Main()
+        public static void Main()
         {
             Draw();
             Draw();
@@ -26,12 +27,8 @@ namespace Adapter.NoCaching
 
         private static void Draw()
         {
-            foreach (var vo in vectorObjects)
-            foreach (var line in vo)
-            {
-                var adapter = new LineToPointAdapter(line);
+            foreach (var adapter in from vo in VectorObjects from line in vo select new LineToPointAdapter(line))
                 adapter.ForEach(DrawPoint);
-            }
         }
     }
 }

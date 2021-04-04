@@ -1,4 +1,4 @@
-namespace BuilderFacets
+namespace Builder
 {
     public class Person
     {

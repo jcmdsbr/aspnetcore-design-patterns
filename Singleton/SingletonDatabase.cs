@@ -15,7 +15,7 @@ namespace Singleton
     public class SingletonDatabase : IDatabase
     {
         // laziness + thread safety
-        private static readonly Lazy<SingletonDatabase> instance = new Lazy<SingletonDatabase>(() =>
+        private static readonly Lazy<SingletonDatabase> instance = new(() =>
         {
             Count++;
             return new SingletonDatabase();
@@ -29,7 +29,7 @@ namespace Singleton
 
             capitals = File.ReadAllLines(
                     Path.Combine(
-                        new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName, "capitals.txt")
+                        new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName ?? string.Empty, "capitals.txt")
                 )
                 .Batch(2)
                 .ToDictionary(

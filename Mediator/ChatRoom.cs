@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Mediator
 {
     public class ChatRoom
     {
-        private readonly List<Person> people = new List<Person>();
+        private readonly List<Person> people = new();
 
         public void Broadcast(string source, string message)
         {
-            foreach (var p in people)
-                if (p.Name != source)
-                    p.Receive(source, message);
+            foreach (var p in people.Where(p => p.Name != source))
+                p.Receive(source, message);
         }
 
         public void Join(Person p)

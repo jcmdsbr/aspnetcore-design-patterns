@@ -5,8 +5,8 @@ namespace Mediator
 {
     public class Person
     {
-        private readonly List<string> chatLog = new List<string>();
-        public string Name;
+        private readonly List<string> chatLog = new();
+        public readonly string Name;
         public ChatRoom Room;
 
         public Person(string name)

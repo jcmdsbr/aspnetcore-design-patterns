@@ -5,10 +5,9 @@ namespace Factories
     public class Point
     {
         // singleton field
-        public static Point Origin2 = new Point(0, 0);
         private double x, y;
 
-        protected Point(double x, double y)
+        private Point(double x, double y)
         {
             this.x = x;
             this.y = y;
@@ -24,6 +23,8 @@ namespace Factories
                     x = a * Math.Cos(b);
                     y = a * Math.Sin(b);
                     break;
+                case CoordinateSystem.Cartesian:
+                    break;
                 default:
                     x = a;
                     y = b;
@@ -37,13 +38,13 @@ namespace Factories
 
         // factory property
 
-        public static Point Origin => new Point(0, 0);
+        public static Point Origin => new(0, 0);
 
         // factory method
 
         public static Point NewCartesianPoint(double x, double y)
         {
-            return new Point(x, y);
+            return new(x, y);
         }
 
         public static Point NewPolarPoint(double rho, double theta)

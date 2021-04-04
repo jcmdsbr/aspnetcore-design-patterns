@@ -2,8 +2,8 @@
 {
     public class Point
     {
-        public int X;
-        public int Y;
+        public readonly int X;
+        public readonly int Y;
 
         public Point(int x, int y)
         {
@@ -11,7 +11,7 @@
             Y = y;
         }
 
-        protected bool Equals(Point other)
+        private bool Equals(Point other)
         {
             return X == other.X && Y == other.Y;
         }
@@ -20,8 +20,7 @@
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != GetType()) return false;
-            return Equals((Point) obj);
+            return obj.GetType() == GetType() && Equals((Point) obj);
         }
 
         public override int GetHashCode()

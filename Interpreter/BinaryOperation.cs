@@ -18,15 +18,12 @@ namespace Interpreter
         {
             get
             {
-                switch (MyType)
+                return MyType switch
                 {
-                    case Type.Addition:
-                        return Left.Value + Right.Value;
-                    case Type.Subtraction:
-                        return Left.Value - Right.Value;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
+                    Type.Addition => Left.Value + Right.Value,
+                    Type.Subtraction => Left.Value - Right.Value,
+                    _ => throw new ArgumentOutOfRangeException()
+                };
             }
         }
     }
